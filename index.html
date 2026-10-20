@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Promo Pakej Perkahwinan</title>
+<meta name="description" content="Pakej foto & video perkahwinan Nikah & Sanding. Promo SGD 1,999 sahaja, deposit serendah SGD 300.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F3EB; --card:#EFE8DC; --ink:#221E17; --muted:#6E675C; --rule:#DED5C6; --accent:#C4622F; --white:#FFFDF9;
+  --serif:'Cormorant Garamond',Georgia,serif; --num:'Instrument Serif',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+body{font-variant-numeric:lining-nums;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:120px 0}
+.eyebrow{font:italic 500 22px/1 var(--serif);color:var(--accent);text-align:center}
+h2{font:400 clamp(44px,7vw,84px)/1.02 var(--serif);letter-spacing:-.01em;text-align:center;margin:20px 0 22px}
+h2 em{font-style:italic}
+.sub{max-width:560px;margin:0 auto;text-align:center;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 28px;font:500 15px/1 var(--sans);text-decoration:none;transition:.2s;border:1px solid transparent}
+.btn.dark{background:var(--ink);color:var(--bg)} .btn.dark:hover{background:#3a342a}
+.btn.dark span{transition:transform .2s} .btn.dark:hover span{transform:translateX(3px)}
+.btn.light{background:var(--white);border-color:var(--rule)} .btn.light:hover{border-color:var(--ink)}
+.btn.block{width:100%}
+
+/* panel */
+.panel{margin-top:72px;background:var(--card);border-radius:32px;padding:clamp(28px,5vw,64px)}
+.plans{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,4vw,56px)}
+.plan{background:var(--white);border-radius:24px;padding:36px;display:flex;flex-direction:column}
+.plan.alt{background:transparent;border:1px solid var(--rule);}
+.tag{margin-bottom:4px;font:italic 500 20px/1.2 var(--serif);color:var(--accent)}
+
+.price{display:flex;align-items:flex-start;gap:10px;flex-wrap:nowrap;margin:22px 0 10px}
+.price b{font:400 clamp(72px,9vw,104px)/1 var(--num);letter-spacing:-.02em}
+.price .cur{font:italic 400 26px/1 var(--num);color:var(--muted);margin-top:16px}
+.price small{font-size:14px;color:var(--muted)}
+.was{font:italic 400 22px var(--serif);color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+.desc{color:var(--muted);padding-bottom:24px;border-bottom:1px solid var(--rule);margin-bottom:24px;max-width:46ch}
+ul.checks{list-style:none;padding:0;display:grid;gap:13px;margin-bottom:32px;font-size:15px}
+ul.checks li{display:grid;grid-template-columns:20px 1fr auto;gap:12px;align-items:start}
+ul.checks li::before{content:"";width:18px;height:18px;margin-top:3px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='none' stroke='%23221E17' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='9' r='8' stroke='%23DED5C6'/%3E%3Cpath d='M5.5 9.3l2.4 2.4 4.6-5'/%3E%3C/svg%3E")}
+ul.checks .w{font:italic 500 17px/1.4 var(--serif);color:var(--accent);white-space:nowrap}
+ul.checks li span.t{grid-column:2}
+.plan .btn{margin-top:auto}
+.total{display:flex;justify-content:space-between;font:400 15px var(--sans);border-top:1px solid var(--rule);padding-top:16px;margin-bottom:24px;color:var(--muted)}
+.total b{color:var(--ink);font-weight:500}
+.fine{text-align:center;font-size:13px;color:var(--muted);margin-top:28px}
+.micro{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:18px}
+.micro span+span::before{content:"·";margin-right:10px}
+
+/* deposit */
+.deposit{background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:72px}
+.step{border-top:1px solid var(--ink);padding-top:20px}
+.step .n{font:italic 500 22px/1 var(--serif);color:var(--accent)}
+.step h3{font:600 17px/1.3 var(--sans);margin:14px 0 6px}
+.step .amt{font:400 58px/1 var(--num);margin:10px 0 12px}
+.step p{color:var(--muted);font-size:15px;max-width:30ch}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:56px}
+
+.gifthint{margin:0 0 28px;padding:14px 18px;border-radius:14px;background:var(--card);font-size:14px;color:var(--muted)}
+.gifthint b{color:var(--accent);font-weight:600}
+.gift{background:var(--card);border-radius:32px 32px 0 0}
+.gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:72px}
+.g{background:var(--bg);border-radius:20px;padding:28px;display:flex;flex-direction:column}
+.g .gn{font:italic 500 22px/1 var(--serif);color:var(--accent)}
+.g h3{font:600 17px/1.35 var(--sans);margin:16px 0 6px}
+.g p{color:var(--muted);font-size:15px;margin-bottom:22px}
+.g .worth{margin-top:auto;font:italic 400 28px/1 var(--num);padding-top:18px;border-top:1px solid var(--rule)}
+.g.total{background:var(--ink);color:var(--bg)}
+.g.total p{color:#b9b1a3}.g.total .worth{border-color:#4a4338;color:#E9A27A;font-size:32px}
+.narrow{max-width:800px}
+.acc{margin-top:64px;border-top:1px solid var(--rule)}
+details{border-bottom:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font:500 18px/1.4 var(--sans)}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--accent)}
+summary i{flex:none;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .25s;margin-right:4px}
+details[open] summary i{transform:rotate(-135deg)}
+.ans{padding:0 40px 26px 0;color:var(--muted);font-size:15.5px;animation:fd .3s ease}
+.ans ul{padding-left:20px;display:grid;gap:8px;margin-top:8px}
+.ans b{color:var(--ink);font-weight:500}
+@keyframes fd{from{opacity:0;transform:translateY(-4px)}}
+.faq{padding-bottom:160px}
+
+.bar{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:center;gap:20px;align-items:center;padding:12px 20px;background:var(--ink);color:var(--bg);font-size:14px;transform:translateY(-100%);transition:transform .3s}
+.bar.on{transform:none}
+.bar b{font:400 20px/1 var(--num);margin-left:6px}
+.bar a{color:#E9A27A;text-decoration:none;font-weight:500}
+.cd{text-align:center;margin-top:48px}
+.cdl{font:italic 500 20px/1 var(--serif);color:var(--accent);margin-bottom:14px}
+.cdn{display:inline-flex;align-items:flex-start;gap:clamp(10px,2.5vw,24px)}
+.cdn div{display:flex;flex-direction:column;align-items:center;min-width:clamp(56px,10vw,92px)}
+.cdn b{font:400 clamp(48px,8vw,80px)/1 var(--num);font-variant-numeric:tabular-nums}
+.cdn span{font-size:14px;color:var(--muted);margin-top:6px}
+.cdn i{font:400 clamp(40px,6vw,64px)/1 var(--num);color:var(--rule);font-style:normal}
+.cd+.panel{margin-top:40px}
+.fb{padding-bottom:120px}
+.quotes{columns:3;column-gap:16px;margin-top:72px}
+.q{break-inside:avoid;background:var(--card);border-radius:20px;padding:28px;margin:0 0 16px}
+.q blockquote{font:400 20px/1.45 var(--serif);font-weight:500}
+.q.big blockquote{font-size:26px;line-height:1.3}
+.q figcaption{margin-top:18px;font-size:14px;color:var(--muted)}
+.q figcaption::before{content:"";display:inline-block;width:18px;height:1px;background:var(--accent);vertical-align:middle;margin-right:10px}
+
+.wide{max-width:1280px}
+.work{padding-bottom:140px}
+.folio{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(10px,1.6vw,24px);row-gap:clamp(40px,6vw,96px);margin-top:88px;align-items:start}
+.ph{grid-column:var(--c);margin-top:var(--mt,0);width:100%;height:auto;display:block;border-radius:4px;background:var(--card)}
+.pull{grid-column:1 / 5;align-self:center;font:400 clamp(26px,3vw,40px)/1.2 var(--serif);color:var(--ink);padding-right:12px}
+.pull em{color:var(--accent)}
+@media(max-width:860px){
+  .folio{grid-template-columns:1fr 1fr;row-gap:14px;column-gap:14px;margin-top:56px}
+  .ph{grid-column:auto;margin-top:0}
+  .ph:nth-of-type(even){margin-top:36px}
+  .ph.land,.pull{grid-column:1 / -1;margin-top:0!important}
+  .pull{padding:24px 0;text-align:center}
+
+  .quotes{columns:1}
+  .gifts{grid-template-columns:1fr}
+  section{padding:80px 0}
+  .plans,.steps{grid-template-columns:1fr}
+  .plan{padding:28px}
+}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"><span>Promo tamat dalam <b id="bar-t">--</b></span><a href="#deposit">Lock slot →</a></div>
+
+
+<section id="promo">
+  <div class="wrap">
+    <div class="eyebrow">Promo pakej, masa terhad</div>
+    <h2>Hari paling bermakna. <br><em>Satu pakej lengkap.</em></h2>
+    <p class="sub">Foto &amp; video sinematik untuk Nikah dan Sanding. Bila promo tamat, harga akan kembali ke asal.</p>
+
+    <div class="cd" id="cd" aria-live="off">
+      <div class="cdl">Promo tamat dalam</div>
+      <div class="cdn"><div><b id="cd-d">00</b><span>hari</span></div><i>:</i><div><b id="cd-h">00</b><span>jam</span></div><i>:</i><div><b id="cd-m">00</b><span>minit</span></div><i>:</i><div><b id="cd-s">00</b><span>saat</span></div></div>
+    </div>
+    <div class="panel">
+      <div class="plans">
+        <div class="plan">
+          <div class="tag">Pakej Nikah &amp; Sanding</div>
+          <div class="price">
+            <span class="cur">SGD</span><b>1,999</b>
+          </div>
+          <div class="was">Harga asal SGD 3,999</div>
+          <p class="desc" style="margin-top:16px">1 photographer &amp; 1 videographer, tone filem yang timeless, elegan dan premium. Bila promo tamat, harga kembali ke asal.</p>
+          <div class="gifthint">+ Free gift bernilai <b>SGD 1,150</b> jika book hari ini</div>
+          <a class="btn dark block" href="#deposit">Lock slot dengan SGD 300 <span>→</span></a>
+        </div>
+        <div class="plan alt">
+          <div class="tag">Apa yang korang akan dapat</div>
+          <ul class="checks" style="margin-top:22px;margin-bottom:0">
+            <li><span class="t">Full coverage 9 jam untuk Nikah &amp; Sanding</span></li>
+            <li><span class="t">Teaser siap dalam 3 hari bekerja</span></li>
+            <li><span class="t">Full deliverable photo, video &amp; album dalam 90 hari bekerja</span></li>
+            <li><span class="t">Tone yang filmic, timeless &amp; cinematic</span></li>
+            <li><span class="t">Sentuhan tone yang elegan &amp; premium</span></li>
+            <li><span class="t">1 photographer dan 1 videographer</span></li>
+            <li><span class="t">3 Video edited &amp; 300 min photo edited</span></li>
+            <li><span class="t">3 Video: Teaser, Nikah Highlight &amp; Sanding Highlight</span></li>
+            <li><span class="t">Jaminan pulangan duit jika late deliver!*</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine">*Untuk produk yang dihantar secara digital sahaja.</p>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="karya">
+  <div class="wrap wide">
+    <div class="eyebrow">Sebahagian karya kami</div>
+    <h2>Bukan sekadar gambar. <br><em>Rasa yang kekal.</em></h2>
+    <p class="sub">Nikah, sanding, dan detik-detik kecil di antaranya.</p>
+    <div class="folio"><img class="ph" style="--c:1 / 7;--mt:0px" src="images/g01.jpg" width="933" height="1400" loading="lazy" alt="Pengantin berlari di tepi tasik"><img class="ph" style="--c:8 / 12;--mt:150px" src="images/g02.jpg" width="933" height="1400" loading="lazy" alt="Pengantin dipeluk ibu"><img class="ph land" style="--c:1 / 9;--mt:0px" src="images/g03.jpg" width="1400" height="933" loading="lazy" alt="Pengantin berpayung putih di tepi bandar"><img class="ph" style="--c:10 / 13;--mt:110px" src="images/g04.jpg" width="933" height="1400" loading="lazy" alt="Pengantin bersandar mesra"><img class="ph" style="--c:2 / 7;--mt:0px" src="images/g05.jpg" width="933" height="1400" loading="lazy" alt="Pengantin duduk dengan latar bandar"><img class="ph" style="--c:7 / 10;--mt:170px" src="images/g06.jpg" width="933" height="1400" loading="lazy" alt="Sarung cincin"><img class="ph" style="--c:10 / 13;--mt:50px" src="images/g07.jpg" width="933" height="1400" loading="lazy" alt="Cincin dan sejambak"><p class="pull">Setiap detik kecil, <em>kami simpan</em> supaya korang boleh balik tengok.</p><img class="ph" style="--c:6 / 10;--mt:0px" src="images/g08.jpg" width="933" height="1400" loading="lazy" alt="Pengantin di pelamin merah"><img class="ph" style="--c:10 / 13;--mt:120px" src="images/g09.jpg" width="933" height="1400" loading="lazy" alt="Pengantin di sebalik tudung nipis"><img class="ph" style="--c:1 / 5;--mt:0px" src="images/g10.jpg" width="933" height="1400" loading="lazy" alt="Pengantin mencium dahi"><img class="ph" style="--c:6 / 10;--mt:90px" src="images/g11.jpg" width="933" height="1400" loading="lazy" alt="Pengantin dikelilingi payung putih"><img class="ph" style="--c:10 / 13;--mt:20px" src="images/g12.jpg" width="933" height="1400" loading="lazy" alt="Pengantin berjalan di pantai"><img class="ph" style="--c:1 / 5;--mt:0px" src="images/g13.jpg" width="933" height="1400" loading="lazy" alt="Pengantin di tepi tingkap"><img class="ph" style="--c:6 / 9;--mt:120px" src="images/g14.jpg" width="933" height="1400" loading="lazy" alt="Pengantin di lorong masjid"><img class="ph" style="--c:10 / 13;--mt:0px" src="images/g15.jpg" width="933" height="1400" loading="lazy" alt="Pengantin berpelukan"></div>
+  </div>
+</section>
+
+<section class="gift" id="freegift">
+  <div class="wrap">
+    <div class="eyebrow">Free gift bila book hari ini</div>
+    <h2>Book hari ini. <br><em>Semua ni free je.</em></h2>
+    <p class="sub">Lima hadiah percuma dengan nilai keseluruhan SGD 1,150, ikut sekali dalam pakej korang.</p>
+    <div class="gifts">
+      <div class="g"><div class="gn">1</div><h3>Premium leather engraved album + frame</h3><p>Album kulit bertulis nama korang, siap dengan frame.</p><div class="worth">Worth SGD 50</div></div>
+      <div class="g"><div class="gn">2</div><h3>4 bulan link warranty + 2x amendment</h3><p>Link gallery kekal 4 bulan dan dua kali pindaan.</p><div class="worth">Worth SGD 200</div></div>
+      <div class="g"><div class="gn">3</div><h3>Transportation fee</h3><p>Kos pengangkutan kami ditanggung.</p><div class="worth">Worth SGD 100</div></div>
+      <div class="g"><div class="gn">4</div><h3>Drone shots</h3><p>Visual udara untuk intro dan outro video.</p><div class="worth">Worth SGD 400</div></div>
+      <div class="g"><div class="gn">5</div><h3>Nikah &amp; Sanding preparation session</h3><p>Sesi persiapan sebelum hari besar.</p><div class="worth">Worth SGD 400</div></div>
+      <div class="g total"><div class="gn">Jumlah nilai</div><h3>Semua ni percuma</h3><p>Dengan setiap tempahan yang dibuat hari ini.</p><div class="worth">Worth SGD 1,150</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="fb" id="feedback">
+  <div class="wrap">
+    <div class="eyebrow">Kata pengantin kami</div>
+    <h2>Mereka dah terima. <br><em>Ini reaksi mereka.</em></h2>
+    <p class="sub">Mesej sebenar daripada pengantin kami di WhatsApp, lepas terima teaser, video dan album.</p>
+    <div class="quotes"><figure class="q big"><blockquote>“Wslm hee terima kasih tau. Menangis saya tengok 😭 Cantik gileee 🫶🏼🫶🏼🫶🏼 In shaa Allah kalau lain kali saya boleh recommend dekat orang lain pulak ya”</blockquote><figcaption>Pengantin, Ipoh</figcaption></figure><figure class="q"><blockquote>“Cantik sgt dah video akan nikah tu, kene dgn lagu apa semua”</blockquote><figcaption>Pengantin</figcaption></figure><figure class="q big"><blockquote>“Salam hai, maaf lambat respon. Dah received album dahh. Aaaa love sangat. Terima kasih banyak juga sebab ambil gambar kami semua cantik cantik. Tak menyesal hire. Terima kasih banyak atas doa nya 🤲🏻”</blockquote><figcaption>Pengantin, Bangi</figcaption></figure><figure class="q"><blockquote>“okeh thank you! gambar sangat lawa 😍”</blockquote><figcaption>Pengantin, KLGCC</figcaption></figure><figure class="q"><blockquote>“Salam Hi, just to inform album and frame dah received. cantik sangatttt memang puas hati”</blockquote><figcaption>Pengantin</figcaption></figure><figure class="q"><blockquote>“CANTIK NYA COVER PAGE PUN EEEEEEEEE”</blockquote><figcaption>Pengantin</figcaption></figure><figure class="q big"><blockquote>“Nak bagi honest review utk my nikah punya video. Video nikah tu sangat sangat perfect 💯. Kita org memang suka sangat sangat.”</blockquote><figcaption>Pengantin, Ipoh</figcaption></figure><figure class="q"><blockquote>“okay dah tengok video teaserrr cantiknyaaa 😍😍😍 terima kasih afif and team”</blockquote><figcaption>Pengantin, Kajang</figcaption></figure><figure class="q"><blockquote>“cantikkkk sangattt. semua okayyyyy”</blockquote><figcaption>Pengantin</figcaption></figure><figure class="q"><blockquote>“Ooo dah ade. Cantikkkk, Fuhh kemahh”</blockquote><figcaption>Pengantin</figcaption></figure><figure class="q"><blockquote>“TAPI CANTIK. SUKA!!”</blockquote><figcaption>Pengantin, Kajang</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="deposit" id="deposit">
+  <div class="wrap">
+    <div class="eyebrow">Cara bayaran</div>
+    <h2>Deposit serendah SGD 300. <br><em>Tak perlu bayar penuh.</em></h2>
+    <p class="sub">Deposit hanya SGD 300 sahaja untuk lock slot. Baki dibahagi kepada dua bayaran yang mudah.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Deposit lock slot</h3>
+        <div class="amt">SGD 300</div>
+        <p>Bayar sekarang untuk kunci tarikh majlis korang.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>3 hari sebelum majlis</h3>
+        <div class="amt">80%</div>
+        <p>80% daripada baki bayaran, iaitu SGD 1,359.20.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>7 hari selepas terima teaser</h3>
+        <div class="amt">20%</div>
+        <p>20% daripada baki bayaran, iaitu SGD 339.80.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a class="btn dark" href="#">Lock slot sekarang <span>→</span></a>
+      <a class="btn light" href="#">Tanya dulu di WhatsApp</a>
+    </div>
+    <div class="micro"><span>Deposit SGD 300 sahaja</span><span>Baki SGD 1,699 dibayar berperingkat</span><span>Harga promo masa terhad</span></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap narrow">
+    <div class="eyebrow">Soalan lazim</div>
+    <h2>Ada soalan? <br><em>Kami jawab dulu.</em></h2>
+    <p class="sub">Tak jumpa jawapan? Mesej kami di WhatsApp.</p>
+    <div class="acc"><details open><summary>Berapa nak add-on photographer / videographer?<i></i></summary><div class="ans"><ul><li>1 event: SGD 400</li><li>2 event: SGD 400</li><li>1 jam tambahan: SGD 100 (photo/video)</li><li>Fast editing: SGD 100 (min. 3 jam gap)</li></ul></div></details><details><summary>Boleh refund tak deposit?<i></i></summary><div class="ans"><p>Deposit tidak refundable kecuali dalam situasi berikut:</p><ul><li><b>Putus, sponsored by kawan/family, tak jadi kahwin:</b> tiada refund melainkan dibatalkan dalam masa 3 minggu selepas booking.</li><li><b>Sakit, kecederaan, kemalangan:</b> 50% refund jika event tinggal 1 bulan atau 3 minggu. 100% refund jika event masih 7 bulan ke atas.</li><li><b>Pasangan berlaku kematian:</b> 100% refund.</li><li><b>Hot date (high demand date):</b> no refund.</li></ul></div></details><details><summary>Pakej ni cover dua hari ke?<i></i></summary><div class="ans"><p>Tak cover dua hari. Tapi korang boleh add-on SGD 400 untuk coverage dua hari.</p></div></details><details><summary>Ada cas tersembunyi tak?<i></i></summary><div class="ans"><p>Tiada hidden charge. Apa yang korang tengok ialah apa yang korang bayar.</p></div></details><details><summary>Ada office ke?<i></i></summary><div class="ans"><p>Kami masih home-based office. Boleh set meeting secara online atau offline ikut keselesaan korang.</p></div></details><details><summary>Ada money back guarantee ke?<i></i></summary><div class="ans"><p>Yup! Jika lewat delivery online product, kita akan refund 10% dari pembayaran.</p></div></details></div>
+  </div>
+</section>
+
+<script>
+// Tukar tarikh tamat promo di sini (waktu Singapura)
+const PROMO_END = new Date('2026-10-31T23:59:59+08:00');
+const p2 = n => String(n).padStart(2,'0');
+function tick(){
+  let t = PROMO_END - Date.now();
+  const cd = document.getElementById('cd');
+  if(t<=0){ cd.innerHTML='<div class="cdl">Promo dah tamat. Harga kembali ke asal.</div>'; document.getElementById('bar').style.display='none'; return; }
+  const d=Math.floor(t/864e5), h=Math.floor(t/36e5)%24, m=Math.floor(t/6e4)%60, sc=Math.floor(t/1e3)%60;
+  document.getElementById('cd-d').textContent=p2(d);document.getElementById('cd-h').textContent=p2(h);
+  document.getElementById('cd-m').textContent=p2(m);document.getElementById('cd-s').textContent=p2(sc);
+  document.getElementById('bar-t').textContent=d+'h '+p2(h)+':'+p2(m)+':'+p2(sc);
+  setTimeout(tick,1000);
+}
+tick();
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>bar.classList.toggle('on',scrollY>500),{passive:true});
+</script>
+</body>
+</html>
